@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cut timing"
+                android:textSize="15dp"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="write a number"
+                android:id="@+id/cutEditText"
+                android:numeric="integer"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateCutButton"
+                android:text="update"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="holi"
+                android:id="@+id/distribution"/>
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/radHist"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+            </com.github.mikephil.charting.charts.RadarChart>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/ballTimesChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/rotorTimesChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.github.mikephil.charting.charts.LineChart>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

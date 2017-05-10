@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:id="@+id/actions">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="monitor"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clear"
+                android:textAllCaps="true"
+                android:id="@+id/TclearButton"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="autoscroll"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_dark"
+                android:id="@+id/TautoButton"/>
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="data mode"
+                android:id="@+id/TmodeButton"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HANDS FREE"
+                android:id="@+id/ThandsButton"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="commands"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/CfallButton"
+                android:text="fall number"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/actions"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendView"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sendEditText"
+                android:hint="talk to me bae"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_send_black_24dp"
+                android:id="@+id/sendButton"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:id="@+id/Tscroll"
+            android:layout_above="@id/sendView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BTterminalText"/>
+
+        </ScrollView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
